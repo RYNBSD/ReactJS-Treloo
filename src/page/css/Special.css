@@ -1,0 +1,140 @@
+.special {
+  width: 100%;
+}
+
+.special .d-grid {
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.specialCard {
+  background-color: var(--white-clr);
+  width: 380px;
+  height: 457px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3rem;
+}
+
+.specialCard__head {
+  width: 90%;
+  height: 70%;
+  position: relative;
+}
+
+.specialCard__head > * {
+  padding: 1rem;
+}
+
+.specialCard__head-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.specialCard__head-img > img {
+  width: 100%;
+}
+
+.specialCard__head-date {
+  position: absolute;
+  top: 185px;
+  left: 172.5px;
+  width: 100%;
+  transform: rotate(90deg);
+}
+
+.specialCard__head-date > small {
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: .5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.specialCard__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 30%;
+  width: 70%;
+}
+
+.specialCard__body-relax {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.specialCard__body-relax-for {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #f178b6;
+  background-color: #f178b620;
+  padding: .2rem .5rem;
+  border-radius: 20px;
+}
+
+.specialCard__body-relax-not {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #7879f1;
+  background-color: #7879f120;
+  padding: .2rem .5rem;
+  border-radius: 20px;
+}
+
+.specialCard__body-relax-days {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.specialCard__body-place {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+}
+
+.specialCard__body-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specialCard__body-price-person {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.specialCard__body-price-person span {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+}
+
+.specialCard__body-price-book {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--blue-clr);
+  background-color: #3e86f520;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+}
+
+@media screen and (max-width: 80rem) {
+  .special .d-grid {
+    grid-template-columns: 1fr;
+  }
+}
