@@ -6,7 +6,7 @@ export default function Header() {
     <header className="header">
       <div className="container f-center">
         <div className="header__logo">
-          <h1>Trelo</h1>
+          <h1>Treloo</h1>
         </div>
         <Navbar />
       </div>
